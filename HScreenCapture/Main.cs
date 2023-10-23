@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HScreenCapture
 {
-    public class Class1
+    public class Main
     {
     }
 }
