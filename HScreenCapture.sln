@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.34031.82
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HScreenCapture", "HScreenCapture\HScreenCapture.csproj", "{56E196EA-1A81-409B-85CF-4CA1B59D533E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HScreenCaptureDemo", "HScreenCaptureDemo\HScreenCaptureDemo.csproj", "{82F08083-645A-42D5-BB8C-54477DE73605}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{56E196EA-1A81-409B-85CF-4CA1B59D533E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{56E196EA-1A81-409B-85CF-4CA1B59D533E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{56E196EA-1A81-409B-85CF-4CA1B59D533E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82F08083-645A-42D5-BB8C-54477DE73605}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82F08083-645A-42D5-BB8C-54477DE73605}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82F08083-645A-42D5-BB8C-54477DE73605}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82F08083-645A-42D5-BB8C-54477DE73605}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
