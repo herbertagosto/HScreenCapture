@@ -119,19 +119,19 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(58, 45);
+            this.textBox2.Location = new System.Drawing.Point(58, 19);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 4;
-            this.textBox2.Text = "Status";
+            this.textBox2.Text = "*Untitled - Notepad";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(58, 19);
+            this.textBox1.Location = new System.Drawing.Point(58, 45);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 2;
-            this.textBox1.Text = "FormWClass";
+            this.textBox1.Text = "Notepad";
             // 
             // button1
             // 

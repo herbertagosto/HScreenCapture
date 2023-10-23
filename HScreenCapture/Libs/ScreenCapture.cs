@@ -25,15 +25,17 @@ namespace HScreenCapture.Libs
         /// </summary>
         /// <param name="handle">The handle to the window. (In windows forms, this is obtained by the Handle property)</param>
         /// <returns></returns>
-        public Image CaptureWindow(IntPtr handle)
+        public Image CaptureWindow(IntPtr handle, bool isWindow = false)
         {
+            // fix windows 10 extra borders
+            int adjustWindow = isWindow ? 7 : 0;
             // get te hDC of the target window
             IntPtr hdcSrc = User32.GetWindowDC(handle);
             // get the size
             User32.RECT windowRect = new User32.RECT();
             User32.GetWindowRect(handle, ref windowRect);
-            int width = windowRect.right - windowRect.left;
-            int height = windowRect.bottom - windowRect.top;
+            int width = windowRect.right - windowRect.left - adjustWindow * 2;
+            int height = windowRect.bottom - windowRect.top - adjustWindow;
             // create a device context we can copy to
             IntPtr hdcDest = GDI32.CreateCompatibleDC(hdcSrc);
             // create a bitmap we can copy it to,
@@ -42,7 +44,7 @@ namespace HScreenCapture.Libs
             // select the bitmap object
             IntPtr hOld = GDI32.SelectObject(hdcDest, hBitmap);
             // bitblt over
-            GDI32.BitBlt(hdcDest, 0, 0, width, height, hdcSrc, 0, 0, GDI32.SRCCOPY);
+            GDI32.BitBlt(hdcDest, 0, 0, width, height, hdcSrc, 0 + adjustWindow, 0, GDI32.SRCCOPY);
             // restore selection
             GDI32.SelectObject(hdcDest, hOld);
             // clean up

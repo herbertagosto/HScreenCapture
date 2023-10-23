@@ -24,7 +24,7 @@ namespace HScreenCapture
         public Image GetImage(string windowClassName, string windowMainTitle)
         {
             var windowHandle = WindowHandle.GetHandle(windowClassName, windowMainTitle);
-            return new ScreenCapture().CaptureWindow(windowHandle);
+            return new ScreenCapture().CaptureWindow(windowHandle, true);
         }
         /// <summary>
         /// Save image to clipboard
