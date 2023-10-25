@@ -2,17 +2,17 @@
 <package >
   <metadata>
     <id>HScreenCapture</id>
-    <version>0.1.0</version>
+    <version>0.2.0</version>
     <authors>Herbert Agosto</authors>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <license type="expression">BSD-2-Clause</license>
     <projectUrl>https://github.com/herbertagosto/HScreenCapture</projectUrl>
     <description>Simple screen and window capture</description>
-    <releaseNotes>New release</releaseNotes>
+    <releaseNotes>Change target framework</releaseNotes>
     <copyright>Copyright (c) 2023, Herbert Agosto</copyright>
     <tags>simple screen capture window screenshot</tags>
     <dependencies>
-      <group targetFramework=".NETStandard4.5">
+      <group targetFramework="net45">
       </group>
     </dependencies>
 	<readme>docs\README.md</readme>
