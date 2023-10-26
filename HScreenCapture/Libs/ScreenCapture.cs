@@ -10,7 +10,7 @@ namespace HScreenCapture.Libs
     /// <summary>
     /// Provides functions to capture the entire screen, or a particular window, and save it to a file.
     /// </summary>
-    public class ScreenCapture
+    class ScreenCapture
     {
         /// <summary>
         /// Creates an Image object containing a screen shot of the entire desktop
@@ -24,6 +24,7 @@ namespace HScreenCapture.Libs
         /// Creates an Image object containing a screen shot of a specific window
         /// </summary>
         /// <param name="handle">The handle to the window. (In windows forms, this is obtained by the Handle property)</param>
+        /// <param name="isWindow"></param>
         /// <returns></returns>
         public Image CaptureWindow(IntPtr handle, bool isWindow = false)
         {

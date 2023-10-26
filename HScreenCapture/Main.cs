@@ -52,7 +52,6 @@ namespace HScreenCapture
         /// <param name="imageFormat"></param>
         public void SaveToFile(string path, Image image, ImageFormat imageFormat)
         {
-            ScreenCapture sc = new ScreenCapture();
             image.Save(path, imageFormat);
         }
     }
