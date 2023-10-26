@@ -17,9 +17,9 @@ private void button1_Click(object sender, EventArgs e)
 
 	// Screen capture a window
 	// Use Microsoft Spy++ to get the window class and caption
-	// Sample window Class: "Notepad"
-	// Sample window caption: "*Untitled - Notepad" 
-	var image = hsc.GetImage("*Untitled - Notepad" "Notepad");
+	// Sample window Class from Spy++: "Notepad"
+	// Sample window caption from Spy++: "*Untitled - Notepad" 
+	var image = hsc.GetImage("Notepad", "*Untitled - Notepad");
 
 	// Save image to clipboard
 	hsc.SaveToClipboard(image);
@@ -47,8 +47,14 @@ hsc.SaveToPNG(filePath, image);
 hsc.SaveToFile(filePath, image, ImageFormat.Png);
 ```
 
+### Common Error
+GDI+ Error: Occurs when the window class name and main title are incorrect.
+
+![Sample GDI+ error](https://github.com/herbertagosto/HScreenCapture/blob/main/Resources/generic-gdi+-error.png)
+
+
 ### Microsoft Spy++
-![Sample Spy++](https://github.com/herbertagosto/HScreenCapture/blob/main/Resources/spy++.png)
+![Sample Spy++ data](https://github.com/herbertagosto/HScreenCapture/blob/main/Resources/spy++.png)
 
 
 ### Prerequisities
